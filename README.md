@@ -21,9 +21,12 @@ Or install it yourself as:
     $ gem install allpay_invoice
 
 ## Usage
+init:
 
-@client = AllpayInvoice::Invoice.new(mode: :test)
-@client.issue TimeStamp: Time.now.to_i,
+    $ @client = AllpayInvoice::Invoice.new(mode: :test)
+create new invoice:
+
+    $ @client.issue TimeStamp: Time.now.to_i,
       RelateNumber: SecureRandom.hex(6),
       CustomerIdentifier: '',
       CustomerName: 'bird的rspec',
