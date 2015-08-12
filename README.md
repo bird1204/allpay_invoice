@@ -22,7 +22,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+@client = AllpayInvoice::Invoice.new(mode: :test)
+@client.issue TimeStamp: Time.now.to_i,
+      RelateNumber: SecureRandom.hex(6),
+      CustomerIdentifier: '',
+      CustomerName: 'bird的rspec',
+      CustomerAddr: 'bird的rspec_address',
+      CustomerPhone: '',
+      CustomerEmail: 'bird1204@gmail.com',
+      ClearanceMark: '',
+      Print: '1',
+      Donation: '2',
+      CarruerType: '',
+      CarruerNum: '',
+      TaxType: '1',
+      SalesAmount: 200,
+      InvoiceRemark: 'remark備註',
+      ItemName: '車子1|item2',
+      ItemCount: '1|1',
+      ItemWord: '個|份',
+      ItemPrice: '100|100',
+      ItemTaxType: '1|1',
+      ItemAmount: '100|100',
+      InvType: '07',
+      InvCreateDate: Time.now.strftime('%Y-%m-%d %H:%M:%S')
 
 ## Development
 

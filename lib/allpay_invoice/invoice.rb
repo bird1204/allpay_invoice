@@ -5,7 +5,7 @@ require 'digest'
 require 'allpay_invoice/errors'
 require 'allpay_invoice/core_ext/hash'
 
-module Allpay
+module AllpayInvoice
   class Invoice
     PRE_ENCODE_COLUMN = [:CustomerName, :CustomerAddr , :CustomerEmail, :ItemName, :ItemWord, :InvoiceRemark, :InvCreateDate, :NotifyMail, :Reason, :IIS_Customer_Name, :IIS_Customer_Addr]
     BLACK_LIST_COLUMN = [:ItemName, :ItemWord, :InvoiceRemark, :Reason]

@@ -1,8 +1,8 @@
 require 'spec_helper'
 require 'securerandom'
-describe Allpay::Invoice do
+describe AllpayInvoice::Invoice do
   before :all do
-    @client = Allpay::Invoice.new(mode: :test)
+    @client = AllpayInvoice::Invoice.new(mode: :test)
   end
 
   it 'has a version number' do
